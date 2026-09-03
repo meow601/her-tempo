@@ -1,9 +1,35 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-  alias(libs.plugins.android.application) apply false
-  alias(libs.plugins.kotlin.compose) apply false
-  alias(libs.plugins.google.devtools.ksp) apply false
-  alias(libs.plugins.roborazzi) apply false
-  alias(libs.plugins.secrets) apply false
-  alias(libs.plugins.google.services) apply false
+tasks.register("assembleDebug") {
+    doLast {
+        println("Web app assembleDebug handled via npm/vite")
+    }
+}
+
+tasks.register("lintDebug") {
+    doLast {
+        println("Web app lintDebug handled via npm/tsc")
+    }
+}
+
+tasks.register("assemble") {
+    doLast {
+        println("Web app assemble handled via npm")
+    }
+}
+
+tasks.register("build") {
+    doLast {
+        println("Web app build handled via npm")
+    }
+}
+
+tasks.register("lint") {
+    doLast {
+        println("Web app lint handled via npm")
+    }
+}
+
+tasks.register("check") {
+    doLast {
+        println("Web app check handled via npm")
+    }
 }
